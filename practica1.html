@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlace al favicon -->
+    <link rel="icon" type="image/x-icon" href="/resources/cat.ico">
+</head>
+<body>
+    <center><p><h1>Formulario de registro - Nombre del Alumno</h1></p></center>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Formulario de registro</legend>
+            <!--apartado de nombre-->
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" class="nombre">
+            <!--apartado de apellido-->
+            <label for="apellido">Apellidos</label>
+            <input type="text" name="apellido" id="apellido" maxlength="60">
+            <!--casillas de sexo-->
+            <fieldset>
+                <legend>Sexo</legend>
+                <label for="sexo">Selecciona tu sexo:</label>
+                <select name="sexo" id="sexo">
+                    <option value="" disabled selected>Elige una opción</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+            </fieldset>                             
+            <!--Apartado de correo-->
+            <label for="correo">Correo</label>
+            <input type="email" name="correo" id="correo"> 
+            <!--casillas de verificacion-->
+            <fieldset>
+                <legend>Desea recibir informacion de novedades y ofertas</legend>
+                <input type="checkbox" name="oferta" id="ofer"> <label for="Oferta">Si</label>
+                <input type="checkbox" name="oferta" id="ofer"> <label for="Oferta">No</label>
+            </fieldset>
+            <!--condiciones-->
+            <fieldset>
+                <legend>Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre la proteccion de datos</legend>
+                <input type="radio" name="norma" id="rule"> <label for="normativa">Si</label>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <center>
+                <button>enviar</button>
+                <button>cancelar</button>
+            </center>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
